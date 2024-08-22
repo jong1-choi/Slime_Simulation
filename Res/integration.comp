@@ -1,0 +1,58 @@
+#version 460 core
+layout( local_size_x = 1) in;
+
+#define NUM_PARTICLES 125
+#define DT 0.05f
+#define ELASTICITY 0.1f
+#define H 1.f
+#define MASS 1.f
+
+layout(std430, binding = 0) buffer position_buf
+{
+	vec4 position[];
+};
+
+layout(std430, binding = 1) buffer velocity_buf
+{
+	vec4 velocity[];
+};
+
+layout(std430, binding = 2) buffer force_buf
+{
+	vec4 force[];
+};
+
+layout(std430, binding = 3) buffer density_buf
+{
+	vec4 density[];
+};
+
+layout(std430, binding = 4) buffer pressure_buf
+{
+	vec4 pressure[];
+};
+
+void main(void) {
+	uint i = gl_GlobalInvocationID.x;
+	velocity[i].xyz += force[i].xyz / MASS * DT;
+	if (abs(velocity[i].x) * DT > H * 2.f / 3.f)
+		velocity[i].x = sign(velocity[i].x) * (H * 2.f / 3.f) / DT;
+
+    if (abs(velocity[i].y) * DT > H * 2.f / 3.f)
+		velocity[i].y = sign(velocity[i].y) * (H * 2.f / 3.f) / DT;
+
+    if (abs(velocity[i].z) * DT > H * 2.f / 3.f)
+		velocity[i].z = sign(velocity[i].z) * (H * 2.f / 3.f) / DT;
+
+	position[i].xyz += velocity[i].xyz * DT;
+
+	// Floor Boundary
+    if (position[i].y < 0.0001f) {
+        position[i].y = 0.0001f;
+        velocity[i].y *= -ELASTICITY;
+        velocity[i].x *= +ELASTICITY;
+        velocity[i].z *= +ELASTICITY;
+    }
+}
+
+

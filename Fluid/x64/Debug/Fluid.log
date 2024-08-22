@@ -1,0 +1,31 @@
+﻿jgl.lib(JGL.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Theme.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Theme.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Widget.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Widget.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Window.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Window.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Aligner.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Aligner.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Slider.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Slider.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Popup.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Popup.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Draw.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Draw.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Scrollable.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Scrollable.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Group.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Group.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_PopupBox.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_PopupBox.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_LinearGroup.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_LinearGroup.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Property.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL_Property.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Targettable.obj) : error LNK2038: '_ITERATOR_DEBUG_LEVEL'에 대해 불일치가 검색되었습니다. '0' 값이 '2'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+jgl.lib(JGL__Targettable.obj) : error LNK2038: 'RuntimeLibrary'에 대해 불일치가 검색되었습니다. 'MD_DynamicRelease' 값이 'MDd_DynamicDebug'(GLTools.obj에 위치) 값과 일치하지 않습니다.
+LINK : warning LNK4098: 'MSVCRT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Debug\Fluid.exe : fatal error LNK1319: 28개의 불일치가 검색되었습니다.

@@ -1,0 +1,113 @@
+﻿  main.cpp
+C:\Users\cjw1464\Downloads\Fluid\Fluid\include\GLFW\glfw3.h(2540,1): warning C4819: 현재 코드 페이지(949)에서 표시할 수 없는 문자가 파일에 들어 있습니다. 데이터가 손실되지 않게 하려면 해당 파일을 유니코드 형식으로 저장하십시오.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(43,10): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'size_t'입니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(43,10): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(43,10): warning C4477: 'printf' : 서식 문자열 '%d'에 'int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'size_t'입니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(43,10): message : 서식 문자열에서 '%zd'을(를) 사용하는 것이 좋습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(71,1): warning C4267: '인수': 'size_t'에서 'GLsizei'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(96,14): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(121,1): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(122,1): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(128,1): warning C4244: '*=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\ModelView.hpp(218,1): warning C4305: '인수': 'double'에서 'GLfloat'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\AnimView.hpp(32,25): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\AnimView.hpp(72,12): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(25,18): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(26,22): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(27,20): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(29,27): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(48,46): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(58,13): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(85,20): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPHSystem.hpp(145,1): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SpatialHash.hpp(57,34): warning C4267: '=': 'size_t'에서 'uint32_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MarchingCube.hpp(326,13): warning C4244: '=': 'double'에서 'T'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MarchingCube.hpp(327,13): warning C4244: '=': 'double'에서 'T'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MarchingCube.hpp(328,13): warning C4244: '=': 'double'에서 'T'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(6,30): warning C4244: '*=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(8,24): warning C4244: 'return': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(18,20): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(23,12): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(24,12): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(25,12): warning C4244: '초기화 중': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(26,9): warning C4244: '초기화 중': 'T'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(27,9): warning C4244: '초기화 중': 'T'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid.hpp(28,9): warning C4244: '초기화 중': 'T'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPH.hpp(103,113): warning C4244: '+=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPH.hpp(140,27): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\SPH.hpp(161,35): warning C4305: '=': 'double'에서 'T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\MeshGrid_GPU.hpp(92,77): warning C4305: '인수': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\main.cpp(32,24): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\main.cpp(38,27): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\main.cpp(43,95): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\main.cpp(141,27): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\main.cpp(145,34): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\main.cpp(153,31): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+C:\Users\cjw1464\Downloads\Fluid\Fluid\Fluid\main.cpp(157,36): warning C4305: '인수': 'double'에서 'const T'(으)로 잘립니다.
+          with
+          [
+              T=float
+          ]
+LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+  코드를 생성하고 있습니다.
+  4 of 922 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+jgl.lib(JGL.obj) : warning LNK4099: '' PDB를 'jgl.lib(JGL.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_Aligner.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_Aligner.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_Group.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_Group.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_LinearGroup.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_LinearGroup.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_PopupBox.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_PopupBox.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_Property.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_Property.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_Slider.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_Slider.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_Widget.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_Widget.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL_Window.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL_Window.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL__Draw.obj) : warning LNK4099: '' PDB를 'jgl.lib(JGL__Draw.obj)' 또는 ''에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL__Popup.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL__Popup.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL__Scrollable.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL__Scrollable.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL__Targettable.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL__Targettable.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(JGL__Theme.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(JGL__Theme.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+jgl.lib(nanovg.obj) : warning LNK4099: 'JGL.pdb' PDB를 'jgl.lib(nanovg.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\JGL.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+glew32s.lib(glew.obj) : warning LNK4099: 'vc120.pdb' PDB를 'glew32s.lib(glew.obj)' 또는 'C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\vc120.pdb'에서 찾을 수 없습니다. 디버그 정보가 없는 것처럼 개체를 링크합니다.
+  Fluid.vcxproj -> C:\Users\cjw1464\Downloads\Fluid\Fluid\x64\Release\Fluid.exe

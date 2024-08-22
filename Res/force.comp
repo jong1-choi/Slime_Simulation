@@ -1,0 +1,94 @@
+#version 460 core
+
+layout( local_size_x = 1) in;
+
+#define NUM_PARTICLES 125
+#define PI 3.1415927410125732421875f
+#define VISCOSITY 100.f
+#define H 1.f
+#define SURFACE_TESNSION 2.f
+#define REWIND_FORCE 0.4f
+#define MASS 1.f
+
+const float spikyGrad = -45.0f / (PI * H * H * H * H * H * H);
+const float spikyLap  =  45.0f / (PI * H * H * H * H * H * H);
+const vec3  gravity	  =  vec3(0.f, -9.8f, 0.f);
+const vec3  target    =  vec3(5.f,  1.f , 5.f);
+
+//uniform int slimeEnabled = 1;
+
+layout(std430, binding = 0) buffer position_buf
+{
+	vec4 position[];
+};
+
+layout(std430, binding = 1) buffer velocity_buf
+{
+	vec4 velocity[];
+};
+
+layout(std430, binding = 2) buffer force_buf
+{
+	vec4 force[];
+};
+
+layout(std430, binding = 3) buffer density_buf
+{
+	vec4 density[];
+};
+
+layout(std430, binding = 4) buffer pressure_buf
+{
+	vec4 pressure[];
+};
+
+void main(void) {
+	uint i = gl_GlobalInvocationID.x;
+	vec3 forceSum = vec3(0.f);
+	for (uint j = 0; j < NUM_PARTICLES; j++) {
+		if (i==j) continue;
+
+		float diff = length(position[i].xyz - position[j].xyz);
+		vec3 dir = normalize(position[i].xyz - position[j].xyz);
+		vec3 diffVec = position[i].xyz - position[j].xyz;
+
+		if (diff > H) continue;
+
+		// pressure force
+		forceSum += 
+			-dir * MASS * (pressure[i].x + pressure[j].x) / (2.f * pressure[j].x) * spikyGrad * (H - diff) * (H - diff);
+
+		// viscosity force
+		forceSum +=
+			VISCOSITY * MASS * (velocity[j].xyz - velocity[i].xyz) / density[j].x * spikyLap * (H - diff);
+
+		// surface tension
+		vec3 normal = normalize(dir * MASS / density[j].x * spikyGrad * (H - diff) * (H - diff));
+		forceSum +=
+			SURFACE_TESNSION * MASS / density[j].x * spikyLap * (H - diff) * normal;
+	}
+
+	// gravity force
+	forceSum += gravity;
+
+	// slime force
+	vec3 dir = normalize(target - position[i].xyz);
+	float dist = length(target - position[i].xyz);
+	
+	// vec3(0.f, 9.f, 0.f) is gravity damping
+	forceSum += 
+		REWIND_FORCE * dir * dist * dist * dist + vec3(0.f, 9.f, 0.f) * MASS;
+
+	//if (slimeEnabled > 0.f) {
+	//	vec3 dir = normalize(target - position[i]);
+	//	float dist = length(target - position[i]);
+	//
+	//	// vec3(0.f, 9.f, 0.f) is gravity damping
+	//	forceSum += 
+	//		REWIND_FORCE * dir * dist * dist * dist + vec3(0.f, 9.f, 0.f) * MASS;
+	//}
+
+	force[i].xyz = forceSum;
+}
+
+

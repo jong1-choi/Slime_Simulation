@@ -1,0 +1,42 @@
+#version 460 core
+layout( local_size_x = 8) in;
+
+#define NUM_PARTICLES 125
+#define SDF_CONSTANT 0.2f
+#define RADIUS 0.5f
+#define WIDTH 0.5f
+
+const vec3 target = vec3(5.f, 1.f ,5.f);
+
+layout(std430, binding = 0) buffer position_buf
+{
+	vec4 position[];
+};
+
+layout(std430, binding = 1) buffer cellPosition_buf
+{
+	vec4 cellPosition[];
+};
+
+layout(std430, binding = 2) buffer cellValue_buf
+{
+	vec4 cellValue[];
+};
+
+float smin(float a, float b, float k) {
+	k *= 1.0 / (1.0 - sqrt(0.5));
+	float h = max(k - abs(a - b), 0.f) / k;
+	return min(a, b) - k * 0.5 * (1.0 + h - sqrt(1.0 - h * (h - 2.0)));
+}
+
+void main(void) {
+	uint i = gl_GlobalInvocationID.x;
+	vec3 cellPos = WIDTH * cellPosition[i].xyz + target;
+	float preMin = length(position[0].xyz - cellPos) - RADIUS;
+	for(int j = 1; j < NUM_PARTICLES; j++) {
+		preMin = smin(preMin, length(position[j].xyz - cellPos) - RADIUS, SDF_CONSTANT);
+	}
+	cellValue[i].x = preMin;
+}
+
+
